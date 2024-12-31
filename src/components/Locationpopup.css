@@ -1,0 +1,96 @@
+/* Overlay */
+.bottom-sheet-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    /* Bottom Sheet */
+    .bottom-sheet {
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      padding: 20px;
+      animation: slideUp 0.3s ease-out;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Animation for the sheet */
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    
+    /* Content Styling */
+    .sheet-content {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .sheet-content h3 {
+      margin-bottom: 10px;
+    }
+    
+    .sheet-content p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+    
+    /* Buttons */
+    .sheet-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+    
+    .enable-location-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .search-manually-btn {
+      background-color: #ffffff;
+      color: #f44336;
+      border: 1px solid #f44336;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      opacity: 0.9;
+    }
+    
+    /* Close Button */
+    .close-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .close-btn:hover {
+      background-color: #ccc;
+    }
+    

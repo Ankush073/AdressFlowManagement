@@ -1,0 +1,51 @@
+.address-form-container {
+      padding: 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 16px auto;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .address-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .address-subtitle {
+      font-size: 14px;
+      color: #555;
+    }
+    
+    .address-form {
+      margin-top: 16px;
+    }
+    
+    .address-label {
+      display: block;
+      font-size: 14px;
+      margin: 8px 0 4px;
+    }
+    
+    .address-input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .address-save-as {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    
+    .icon-button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    

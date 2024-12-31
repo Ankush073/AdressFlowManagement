@@ -1,0 +1,117 @@
+/* FetchedAddress.css */
+.location-popup-container {
+  background-color: #fbe2e2;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.popup-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.map-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Tooltip styling */
+.pin-tooltip {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.pin-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+
+/* Address and buttons section */
+.address-and-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.address-display {
+  flex: 1;
+  text-align: left;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.address {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Button styles */
+.enable-btn, .change-btn {
+  background-color: #ff3d3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.enable-btn:hover, .change-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Locate Me button styling (bottom center) */
+.locate-me-btn {
+  background-color: #ff3d3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.locate-me-btn:hover {
+  background-color: #c9302c;
+}
